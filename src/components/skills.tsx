@@ -28,7 +28,7 @@ const Skills = ({ data } : any) => {
 				activeTab === "soft" ? "justify-start" : "justify-end"
 			}`}
 		>
-			{data[activeTab].map(({ icon, text }) => (
+			{data[activeTab].map(({ icon, text }:any ) => (
 				<li key={text} className='skill'>
 					<span> {icon}</span> {text}
 				</li>
